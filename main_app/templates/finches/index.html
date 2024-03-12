@@ -8,6 +8,9 @@
 <a href="{% url 'detail' finch.id %}">
     <div class="card-content">
       <span class="card-title">{{ finch.breed  }}</span>
+      <p>Habitat: {{ finch.habitat|linebreaks }}</p>
+      <p>Description: {{ finch.description|linebreaks }}</p>
+      <p>Population: {{ finch.population}}</p>
     </div>
   </a>
 </div>
